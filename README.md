@@ -13,6 +13,8 @@ Setup your parameter
 ``` yaml
 # User used to make call
 user: cifren
+options:
+  - "-R 52698:localhost:52698"
 server:
   grouper:
     name: host.com

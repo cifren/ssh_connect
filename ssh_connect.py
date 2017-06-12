@@ -18,7 +18,10 @@ def kinit():
     call(["kinit"])
 
 def run_ssh(serverName, config):
-  call(["ssh", config['user'] + "@" + serverName, "-K"])
+  options = " ".join(config['options'])
+  command = ["ssh", config['user'] + "@" + serverName, "-K", options]
+  print " ".join(command)
+  call(command)
 
 def getConfiguration():
 	dir_path = os.path.dirname(os.path.realpath(__file__))
