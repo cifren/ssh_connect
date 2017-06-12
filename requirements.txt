@@ -1,0 +1,4 @@
+# package
+PyYAML == 3.12
+pathlib2 == 2.2.1
+

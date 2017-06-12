@@ -1,0 +1,4 @@
+user: user
+server:
+  servercode:
+    name: serverName
